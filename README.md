@@ -1,3 +1,19 @@
+Install
+===
+
+```bash
+npm install implement
+```
+
+Javascript
+===
+
+Demonstrated using mocha
+
+
+```javascript
+// test.implement.js
+
 "use strict"
 
 const implement = require("implement")
@@ -29,16 +45,25 @@ Stack.prototype = {
 
 describe("implement", function () {
     it("should not throw error when implementing interface", function (done) {
-        implement(ArrayQueue, Queue) //ArrayQueue is a Queue
+        implement(ArrayQueue, Queue)
         done()
     })
     
     it("Should throw error when not implementing interface", function (done) {
         try {
-            implement(Stack, Queue) // Stack is not the same as a Queue
+            implement(Stack, Queue)
         } catch (error) {
             console.log(error.message)
             done()        
         }
     })
 })
+
+```
+
+Run
+===
+
+```bash
+mocha test.js
+```

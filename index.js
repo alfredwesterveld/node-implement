@@ -12,7 +12,7 @@ function getAllMethods(object) {
 }
 
 /**
- * implement just tests if functions do exist. It should also be tested(unit)
+ * implement just tests only if functions do exist. It should also be tested(unit)
  */ 
 function implement(actual, expected) {
     const actualMethods = getAllMethods(actual)
