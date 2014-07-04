@@ -1,6 +1,6 @@
 {
   "name": "implement",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "implement interface",
   "main": "index.js",
   "directories": {
@@ -8,6 +8,10 @@
   },
   "dependencies": {
     "deep-equal": "~0.2.1"
+  },
+  "repository" : { 
+    "type" : "git",
+    "url" : "https://github.com/alfredwesterveld/node-implement"
   },
   "devDependencies": {},
   "scripts": {
