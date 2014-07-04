@@ -41,4 +41,9 @@ describe("implement", function () {
             done()        
         }
     })
+    
+    it("Should also work with objects", function (done) {
+        implement(new ArrayQueue(), new Queue())
+        done()
+    })
 })

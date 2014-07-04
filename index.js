@@ -6,8 +6,10 @@ const util = require("util")
 
 // used http://stackoverflow.com/a/2946616/11926 as baseline
 function getAllMethods(object) {
-    return Object.getOwnPropertyNames(object.prototype).filter(function(property) {
-        return typeof object.prototype[property] === "function"
+    const obj = object.prototype || object
+    
+    return Object.getOwnPropertyNames(obj).filter(function(property) {
+        return typeof obj[property] === "function"
     })
 }
 
