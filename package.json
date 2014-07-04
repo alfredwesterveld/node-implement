@@ -1,0 +1,22 @@
+{
+  "name": "implement",
+  "version": "0.0.0",
+  "description": "implement interface",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "deep-equal": "~0.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "implement",
+    "interface"
+  ],
+  "author": "Alfred Westerveld",
+  "license": "ISC"
+}
