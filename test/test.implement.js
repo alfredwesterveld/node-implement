@@ -1,5 +1,6 @@
 "use strict"
 
+const util = require("util")
 const implement = require("implement")
 
 // LIFO.
@@ -37,7 +38,6 @@ describe("implement", function () {
         try {
             implement(Stack, Queue) // Stack is not the same as a Queue
         } catch (error) {
-            console.log(error.message)
             done()        
         }
     })
